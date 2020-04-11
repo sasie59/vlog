@@ -1,12 +1,14 @@
 import React from 'react';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>example</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor eligendi porro non facilis. Ipsam deserunt eaque saepe corrupti, autem voluptas dolor accusantium expedita vel facere ullam consectetur debitis fugit?
+          CICD test
         </p>
         <a
           className="App-link"
