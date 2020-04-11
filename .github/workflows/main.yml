@@ -17,14 +17,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - name: CheckOut
+      uses: actions/checkout@master
 
     # Runs a single command using the runners shell
-    - name: npm i node_modules
-      run: npm i 
-
-    # Runs a set of commands using the runners shell
-    - name: npm deploy
-      run: |
-        npm run build
+    - name: Build and Deploy
+      uses: sasie59/github-gh-pages-deploy-action@master
+      with:
+        keep_history: true
+      env:
+        ACCESS_TOKEN: ${{serects.token}}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: npm i && npm run deploy
 
