@@ -16,7 +16,7 @@ jobs:
         with:
           keep_history: true
         env:
-          ACCESS_TOKEN: ${{ secrts.token }}
+          ACCESS_TOKEN: ${{ secrets.token }}
           BRANCH: gh-pages
           FOLDER: build
           BUILD_SCRIPT: npm install && npm run deploy
