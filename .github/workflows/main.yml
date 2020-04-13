@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Build and Deploy
-        uses: sasie59/github-gh-pages-deploy-action@master
+        uses: JamesIves/github-gh-pages-deploy-action@master
         with:
           keep_history: true
         env:
