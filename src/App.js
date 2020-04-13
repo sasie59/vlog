@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>example</h1>
+        <h1>Example</h1>
         <p>
-          CICD test
+          CICD 1th TEST
         </p>
         <a
           className="App-link"
