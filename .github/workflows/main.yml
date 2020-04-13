@@ -1,9 +1,10 @@
 on:
   push:
-    branches: [ master ]
+    branches: 
+      - master 
 
 jobs:
-  build-andeploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: CheckOut
@@ -14,7 +15,7 @@ jobs:
         with:
           keep_history: true
         env:
-          ACCESS_TOKEN: ${{ serects.TOKEN }}
+          ACCESS_TOKEN: ${{ secrts.token }}
           BRANCH: gh-pages
           FOLDER: build
           BUILD_SCRIPT: npm install && npm run deploy
