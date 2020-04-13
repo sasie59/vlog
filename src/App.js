@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <h1>Example</h1>
         <p>
-          CICD 2th
+          CICD 3th
         </p>
         <a
           className="App-link"
